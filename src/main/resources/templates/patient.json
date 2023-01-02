@@ -1,0 +1,58 @@
+[
+  {
+    "patientId": 1,
+    "patientName": "KL Rahul",
+    "dob": null,
+    "address": null,
+    "contactNo": null,
+    "disease": null
+  },
+  {
+    "patientId": 7,
+    "patientName": "MS Dhoni",
+    "dob": "2014-03-12T13:37:27.000+00:00",
+    "address": "Jharkand",
+    "contactNo": "12345",
+    "disease": "Heavy Hitting"
+  },
+  {
+    "patientId": 12,
+    "patientName": "Yuvraj",
+    "dob": null,
+    "address": null,
+    "contactNo": null,
+    "disease": null
+  },
+  {
+    "patientId": 29,
+    "patientName": "Khaleel Ibrahim",
+    "dob": null,
+    "address": null,
+    "contactNo": null,
+    "disease": null
+  },
+  {
+    "patientId": 49,
+    "patientName": "Khaleel",
+    "dob": null,
+    "address": null,
+    "contactNo": null,
+    "disease": null
+  },
+  {
+    "patientId": 100,
+    "patientName": "Virat Kohli",
+    "dob": null,
+    "address": null,
+    "contactNo": null,
+    "disease": null
+  },
+  {
+    "patientId": 300,
+    "patientName": "Sehwag",
+    "dob": null,
+    "address": null,
+    "contactNo": null,
+    "disease": null
+  }
+]

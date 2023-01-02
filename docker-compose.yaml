@@ -1,0 +1,24 @@
+version: "3"
+services:
+  springboot-doctor-patient-crud:
+    #container_name: myApp
+    image: doctor-patient-crud
+    restart: on-failure
+    build: .
+    ports:
+      - 8080:8080
+    environment:
+      MYSQL_HOST: mysqldb
+      MYSQL_USER: root
+      MYSQL_PASSWORD: Adm1n#123
+      MYSQL_PORT: 3306
+
+
+  mysqldb:
+    container_name: mysqldb
+    image: mysql
+    ports:
+      - 3307:3306
+    environment:
+      MYSQL_DATABASE: userdatabase
+      MYSQL_ROOT_PASSWORD: Adm1n#123

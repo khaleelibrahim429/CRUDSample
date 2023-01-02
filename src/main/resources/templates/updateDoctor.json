@@ -1,0 +1,22 @@
+{
+  "doctorId":3,
+  "doctorName":"Dr.Akbar Ali Milu"
+  "patients": [
+    {
+      "patientId": 1,
+      "patientName": "Ganguly",
+      "dob": "1972-07-08T13:37:27.000+00:00",
+      "address": "Bengal",
+      "contactNo": "123465",
+      "disease": "Huge Sixer"
+    },
+    {
+      "patientId": 10,
+      "patientName": "Sachin",
+      "dob": "1973-03-12T13:37:27.000+00:00",
+      "address": "Mumbai",
+      "contactNo": "10000",
+      "disease": "Master Blasting"
+    }
+  ]
+}
