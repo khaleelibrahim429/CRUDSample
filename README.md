@@ -4,7 +4,10 @@ How to Setup project
 
 To run locally:
 
-1. Setup mysql database
+1. Setup mysql database - Please refer below file.
+   a. Local database configurations done in `applications.properties`
+
+   b. Docker configurations in `docker-compose.yaml`
 
 2. Build the project:
     -  `mvn clean install`
@@ -22,10 +25,11 @@ To run in docker compose
     - Dockerfile
     - docker-compose.yaml
 
-   b. To start the application : `docker compose up --build`
-   c. To stop the application : `docker compose down`
+   b. To start the application : Open the terminal and run  `docker compose up --build`
 
-Once the above steps are completed, use POSTMAN to run below mentioned APIs.
+   c. To stop the application : Run `docker compose down`
+
+Once the above steps are completed, use POSTMAN to run below APIs.
 
 
 REST APIs Endpoints
@@ -38,7 +42,9 @@ PATIENT CRUD API's
 1. Add a patient
 
 POST /addPatient
+
 Accept: application/json
+
 Content-Type: application/json
 
 `{
@@ -53,20 +59,27 @@ Content-Type: application/json
 2. Get all Patient details
 
 GET /getAllPatients
+
 Accept: application/json
+
 Content-Type: application/json
 
 3. Get Patient details by Id
 
 GET /getPatient/{patientId}
+
 Accept: application/json
+
 Content-Type: application/json
 
 
 4. Update Patient details
-   PUT /updatePatient/{patientId}
-   Accept: application/json
-   Content-Type: application/json
+
+PUT /updatePatient/{patientId}
+   
+Accept: application/json 
+
+Content-Type: application/json
 
 `{
 "patientId": 24,
@@ -81,14 +94,18 @@ Content-Type: application/json
 5. Delete Patient details
 
 DELETE /deletePatient/{patientId}
+
 Accept: application/json
+
 Content-Type: application/json
 
 
 6. Allocate a doctor to patient
 
 PUT /{patientId}/allocateDoctor/{doctorId}
+
 Accept: application/json
+
 Content-Type: application/json
 
 
@@ -98,8 +115,11 @@ DOCTOR CRUD API's
 1. Add a doctor
 
 POST /addDoctor
+
 Accept: application/json
+
 Content-Type: application/json
+
 {`
 "doctorId": 1,
 "doctorName": "Dr. Kapil Dev",
@@ -109,20 +129,27 @@ Content-Type: application/json
 2. Get all doctor details
 
 GET /getAllDoctors
+
 Accept: application/json
+
 Content-Type: application/json
 
 3. Get doctor details by Id
 
 GET /getDoctor/{doctorId}
+
 Accept: application/json
+
 Content-Type: application/json
 
 
 4. Update doctor details
-   PUT /updateDoctor/{doctorId}
-   Accept: application/json
-   Content-Type: application/json
+
+PUT /updateDoctor/{doctorId}
+
+Accept: application/json 
+
+Content-Type: application/json
 
 `{
 "doctorId": 1,
@@ -134,23 +161,23 @@ Content-Type: application/json
 5. Delete Doctor details
 
 DELETE /deleteDoctor/{doctorId}
+
 Accept: application/json
+
 Content-Type: application/json
 
 
 6. Allocate a doctor to patient
 
 PUT /{doctorId}/deAllocate/{patientId}
+
 Accept: application/json
+
 Content-Type: application/json
 
 Get common information
 
-1. Health check
-   GET /
-   Eg: http://localhost:8080/
+1. Health check 
+GET / 
 
-
-
-
-
+Eg: http://localhost:8080/
